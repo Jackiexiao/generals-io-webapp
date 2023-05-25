@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import useImage from "use-image";
-import { useTileStateTypes, useTileStateValidation } from "hooks";
-import { crown, mountain, questionMark, tower } from "assets";
+import { useTileStateTypes, useTileStateValidation } from "../hooks";
+import { crown, mountain, questionMark, tower } from "../assets";
 
 /**
  * useTileState
@@ -30,12 +30,8 @@ import { crown, mountain, questionMark, tower } from "assets";
  */
 export default function useTileState(tile) {
   const { typesEnum } = useTileStateTypes();
-  const {
-    typeKey,
-    isRevealed,
-    playerId,
-    unitiesCount,
-  } = useTileStateValidation(tile);
+  const { typeKey, isRevealed, playerId, unitiesCount } =
+    useTileStateValidation(tile);
 
   const typeValue = useMemo(() => typesEnum[typeKey], [typesEnum, typeKey]);
   const typeImageUrl = useMemo(

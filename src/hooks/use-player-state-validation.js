@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useIsValidHexColor, useIsValidPositiveInteger } from "hooks";
+import { useIsValidHexColor, useIsValidPositiveInteger } from "../hooks";
 
 export default function usePlayerStateValidation(player) {
   const isStateDefined = useMemo(

@@ -1,4 +1,4 @@
-import { usePlayerStateValidation } from "hooks";
+import { usePlayerStateValidation } from "../hooks";
 
 /**
  * usePlayerState
@@ -20,13 +20,8 @@ import { usePlayerStateValidation } from "hooks";
  *    landsCount:   {number}
  */
 export default function usePlayerState(player) {
-  const {
-    id,
-    name,
-    color,
-    unitiesCount,
-    landsCount,
-  } = usePlayerStateValidation(player);
+  const { id, name, color, unitiesCount, landsCount } =
+    usePlayerStateValidation(player);
 
   return {
     id,

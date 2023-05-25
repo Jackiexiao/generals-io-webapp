@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useIsValidPositiveInteger, useTileStateTypes } from "hooks";
+import { useIsValidPositiveInteger, useTileStateTypes } from "../hooks";
 
 export default function useTileStateValidation(tile) {
   const { typeKeys } = useTileStateTypes();

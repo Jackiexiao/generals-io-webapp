@@ -1,38 +1,28 @@
 {
-  "name": "clone-generals-io",
+  "name": "next-generals",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "classnames": "^2.2.6",
-    "konva": "^7.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-konva": "^16.13.0-3",
-    "react-scripts": "3.4.1",
-    "use-image": "^1.0.6"
-  },
   "scripts": {
-    "start": "NODE_PATH=src/ react-scripts start",
-    "build": "NODE_PATH=src/react-scripts build",
-    "test": "NODE_PATH=src/react-scripts test",
-    "eject": "NODE_PATH=src/react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "canvas": "^2.11.2",
+    "classnames": "^2.3.2",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "konva": "^9.0.2",
+    "next": "13.4.3",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-konva": "^18.2.8",
+    "typescript": "5.0.4",
+    "use-image": "^1.1.0"
   }
 }

@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react";
 import { Stage } from "konva";
-import { usePlayerState, useTileState } from "hooks";
+import { usePlayerState, useTileState } from "../hooks";
 
 export default function useMapTileState({
   players,
